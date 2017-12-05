@@ -32,20 +32,33 @@
       <div id='app'>
 
         <div id='headers'>
-          <!-- Title and subtitles! -->
+          <h1>Guessing Game</h1>
+          <h2>Guess a number between 1-100</h2>
         </div>
 
         <div id='main'>
           <div id='input-parent'>
-            <!-- Player's guess input, and submit button -->
+            <label for="guess">Your guess:</label>
+            <input id="guess" type="text" placeholder="100">
+            <br>
+            <button>Submit</button>
           </div>
 
           <div id='guesses'>
-            <!-- unordered list of guesses -->
+            <h4>Your previous guesses:</h4>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
           </div>
 
           <div id="menu-btns">
             <!-- reset and hint buttons -->
+            <button id="reset">Reset</button>
+            <button id="hint">Hint</button>
           </div>
         </div>
       </div>
@@ -59,7 +72,7 @@
           </div>
 
           <div class=''>
-            <h4>Project by YOUR NAME HERE</h4>
+            <h4>Project by Sarah Grossman</h4>
           </div>
 
           <div class=''>
