@@ -1,64 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <title>Guessing Game</title>
-
-    <!-- Bootstrap and CSS here-->
-    <style>
-      .center {
-        text-align: center;
-      }
-      ul {
-          list-style: none;
-          padding: 0;
-      }
-      img {
-          display: inline;
-          width: 200px;
-          height: 100px;
-      }
-      #footer {
-          width: 100%;
-          border-top: solid 2px black;
-          background-color: white;
-          position: fixed;
-          bottom: 0;
-      }
-    </style>
-
   </head>
+
   <body>
 
-      <div id='app'>
+      <div class="center container" id="app">
 
-        <div id='headers'>
+        <div id="headers">
           <h1>Guessing Game</h1>
           <h2>Guess a number between 1-100</h2>
         </div>
 
         <div id='main'>
           <div id='input-parent'>
-            <label for="guess">Your guess:</label>
-            <input id="guess" type="text" placeholder="100">
+            <label for="player-input">Your guess:</label>
+            <input id="player-input" type="text" placeholder="100">
             <br>
-            <button>Submit</button>
+            <button class="btn btn-primary" id="submit">Submit</button>
           </div>
 
           <div id='guesses'>
             <h4>Your previous guesses:</h4>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li class="guess">-</li>
+                <li class="guess">-</li>
+                <li class="guess">-</li>
+                <li class="guess">-</li>
+                <li class="guess">-</li>
             </ul>
           </div>
 
           <div id="menu-btns">
-            <!-- reset and hint buttons -->
-            <button id="reset">Reset</button>
-            <button id="hint">Hint</button>
+            <button class="btn btn-default" id="reset">Reset</button>
+            <button class="btn btn-default"id="hint">Hint</button>
           </div>
         </div>
       </div>
@@ -66,22 +44,18 @@
 
 
     <div id='footer'>
-        <div>
-          <div class=''>
-            <img src='fa-logo@2x.png'></img>
+        <div class="row">
+          <div class="fullstack col-sm-4">
+            <img src="fa-logo@2x.png"></img>
+          </div>
+          <div class="gh col-sm-4">
+            <img src="grace_hopper_academy.png"></img>
           </div>
 
-          <div class=''>
+          <div class="name col-sm-4">
             <h4>Project by Sarah Grossman</h4>
           </div>
-
-          <div class=''>
-            <img src='grace_hopper_academy.png'></img>
-          </div>
-
-
         </div>
     </div>
-
   </body>
 </html>
