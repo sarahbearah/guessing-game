@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <title>Guessing Game</title>
   </head>
 
   <body>
 
-      <div class="center container" id="app">
+      <div class="center container-fluid" id="app">
 
         <div id="headers">
           <h1>Guessing Game</h1>
@@ -18,7 +18,7 @@
         <div id='main'>
           <div id='input-parent'>
             <label for="player-input">Your guess:</label>
-            <input id="player-input" type="text" placeholder="100">
+            <input id="player-input" type="text" placeholder="#">
             <br>
             <button class="btn btn-primary" id="submit">Submit</button>
           </div>
@@ -43,18 +43,19 @@
 
 
 
-    <div id='footer'>
+    <div id='footer' class="center container">
         <div class="row">
           <div class="fullstack col-sm-4">
             <img src="fa-logo@2x.png"></img>
           </div>
+          <div class="name col-sm-4">
+              <h4>Project by Sarah Grossman</h4>
+            </div>
           <div class="gh col-sm-4">
             <img src="grace_hopper_academy.png"></img>
           </div>
 
-          <div class="name col-sm-4">
-            <h4>Project by Sarah Grossman</h4>
-          </div>
+          
         </div>
     </div>
   </body>
