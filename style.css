@@ -1,20 +1,58 @@
-/* html {
-    box-sizing: 'border-box'
-} */
+body {
+    background-image: linear-gradient(to bottom, rgba(241, 237, 237, 0.4) 0%,rgba(241,237,237,0.4) 100%), url('https://static.pexels.com/photos/355952/pexels-photo-355952.jpeg');
+    background-size: cover;
+    
+}
+
+body:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(/wp-content/uploads/2010/11/tandem.jpg); 
+    width: 100%;
+    height: 100%;
+    opacity : 0.9;
+    z-index: -1;
+}
 
 #headers {
-    margin: 50px auto 200px auto;
+    margin: 50px auto 150px auto;
+    color: black;
 }
 
 #input-parent {
     width: 160px;
+    font-size: large;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 
 #player-input {
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    box-shadow: 2px 2px rgb(46, 45, 45);
+    text-align: center;
+    font-size: 60px;
+}
+
+#submit {
+    position: absolute;
+    background-color: green;
+    top: 115px;
+    right: 4px;
+    height: 55px;
+    width: 55px;
+    border: 1px solid green;
+    border-radius: 50%;
+    box-shadow: 2px 2px rgb(46, 45, 45);
+    
+    
 }
 
 #guesses {
@@ -28,6 +66,19 @@ ul {
     list-style: none;
     padding: 0;
 }
+
+.guess {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    border-radius: 10%; 
+    font-size: 60px;
+    color: black;
+    background-color: white;
+    box-shadow: 2px 2px rgb(46, 45, 45);
+ }
+ 
 img {
     display: inline;
     width: 200px;
@@ -40,6 +91,8 @@ img {
     position: fixed;
     bottom: 0;
 }
+
+
 
 #name {
     text-align: center;
