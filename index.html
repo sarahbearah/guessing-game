@@ -11,8 +11,8 @@
       <div class="center container" id="app">
 
         <div id="headers">
-          <h1>Guessing Game!</h1>
-          <h2>Guess a number between 1-100!</h2>
+          <h1 id="title">Welcome to the Guessing Game!</h1>
+          <h2 id="subtitle">Guess a number between 1 & 100.</h2>
         </div>
 
         <div id='main'>
@@ -23,18 +23,18 @@
 
           <div id='guesses'>
             <h4>Your previous guesses:</h4>
-            <ul>
-                <li class="guess">-</li>
-                <li class="guess">-</li>
-                <li class="guess">-</li>
-                <li class="guess">-</li>
-                <li class="guess">-</li>
+            <ul id="guess-list">
+                <li class="guess" id="guess1">-</li>
+                <li class="guess" id="guess2">-</li>
+                <li class="guess" id="guess3">-</li>
+                <li class="guess" id="guess4">-</li>
+                <li class="guess" id="guess5">-</li>
             </ul>
           </div>
 
           <div id="menu-btns">
-            <button class="btn btn-warning" id="reset">Reset</button>
-            <button class="btn btn-info"id="hint">Hint</button>
+            <button class="btn btn-warning box-shadow--16dp" id="reset">Reset</button>
+            <button class="btn btn-info box-shadow--16dp"id="hint">Hint</button>
           </div>
         </div>
       </div>
@@ -56,5 +56,7 @@
           
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="../GuessingGame-Part2/GuessingGame.js"></script>
   </body>
 </html>

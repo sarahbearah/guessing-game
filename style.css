@@ -10,7 +10,8 @@ body:after {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(/wp-content/uploads/2010/11/tandem.jpg); 
+    background-image: url(numbackground.jpeg); 
+    background-size: 100% auto;
     width: 100%;
     height: 100%;
     opacity : 0.9;
@@ -18,8 +19,9 @@ body:after {
 }
 
 #headers {
-    margin: 50px auto 150px auto;
-    color: black;
+    margin: 50px auto 70px auto;
+    color: white;
+    text-shadow: 2px 2px black;
 }
 
 #input-parent {
@@ -51,12 +53,13 @@ body:after {
     border: 1px solid green;
     border-radius: 50%;
     box-shadow: 2px 2px rgb(46, 45, 45);
-    
-    
+     
 }
 
 #guesses {
-    margin-top: 300px;
+    margin-top: 70px;
+    color: white;
+    text-shadow: 2px 2px black;
 }
 
 .center {
@@ -77,6 +80,7 @@ ul {
     color: black;
     background-color: white;
     box-shadow: 2px 2px rgb(46, 45, 45);
+    text-shadow: none;
  }
  
 img {
@@ -84,6 +88,11 @@ img {
     width: 200px;
     height: 100px;
 }
+
+#reset {
+    border: 1px black;
+}
+
 #footer {
     width: 100%;
     border-top: solid 2px black;
