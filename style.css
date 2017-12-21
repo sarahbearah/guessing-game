@@ -89,8 +89,9 @@ img {
     height: 100px;
 }
 
-#reset {
-    border: 1px black;
+#reset, #hint {
+    box-shadow: 2px 3px 0px rgba(4, 4, 4, 0.3);
+    border: 5px black;
 }
 
 #footer {
